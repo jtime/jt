@@ -3,146 +3,168 @@
 
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Jtime's Personal Site</title>
-    <!-- Add Bootstrap CSS -->
+
+    <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
     <style>
+        /* General styles */
         body {
-            background: linear-gradient(to right, #f8e9a1, #f76d57); /* 這將產生一個從黃色到橙紅的漸變背景 */
+            background: linear-gradient(to right, #f8e9a1, #f76d57);
             color: #333;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
         }
         
+        h1, h3 {
+            font-weight: 600;
+            margin-bottom: 20px;
+        }
+
         a {
             color: #007bff;
+            transition: all 0.3s;
         }
 
         a:hover {
             text-decoration: underline;
+            transform: scale(1.05);
         }
 
-        /* 圖片效果 */
         img:hover {
-            transform: scale(1.1); /* 放大效果 */
-            transition: transform 0.2s; /* 平滑放大動畫 */
+            transform: scale(1.1);
+            transition: transform 0.2s;
         }
 
-        /* 更改Bootstrap的表格顏色 */
+        /* Table styles */
         .table {
-            background-color: rgba(255, 255, 255, 0.8); /* 白色背景且半透明 */
+            background-color: rgba(255, 255, 255, 0.8);
         }
 
-        th, td {
+        .table th, .table td {
             border: none !important;
         }
 
-        th {
+        .table th {
             border-bottom: 1px solid #ddd !important;
-		/* 加入的自定義樣式 */
-		.table-custom {
-			background-color: rgba(255, 255, 255, 0.8);
-			border: 1px solid rgba(255, 178, 127, 0.7);
-			border-radius: 15px;  /* 圓角 */
-			overflow: hidden;  /* 確保子元素不超出圓角 */
-		}
+        }
 
-		.table-custom thead {
-			background-color: rgba(255, 143, 94, 0.8);
-		}
+        .table-custom {
+            background-color: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(255, 178, 127, 0.7);
+            border-radius: 15px;
+        }
 
-		.table-custom thead th {
-			border: none;
-			color: white;
-		}
+        .table-custom thead {
+            background-color: rgba(255, 143, 94, 0.8);
+        }
 
-		.table-custom tbody tr:last-child td {
-			border-bottom: none;
-		}
+        .table-custom thead th {
+            border: none;
+            color: white;
+        }
 
-		.table-custom tbody td {
-			border-top: none;
-			border-bottom: 1px solid rgba(255, 178, 127, 0.5);
-		}
+        .table-custom tbody tr:last-child td {
+            border-bottom: none;
+        }
 
-				}
+        .table-custom tbody td {
+            border-top: none;
+            border-bottom: 1px solid rgba(255, 178, 127, 0.5);
+        }
+
+        /* Container styles */
+        .container {
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 20px;
+            border-radius: 15px;
+            margin-top: 5%;
+        }
+
+        ol li {
+            transition: all 0.3s;
+        }
+
+        ol li:hover {
+            transform: translateX(10px);
+        }
     </style>
 </head>
 
-<body class="container mt-5">
-    <div class="row mb-5">
-        <div class="col-md-4">
-            <!-- 加了一個陰影效果 -->
-            <img src="beer.jpg" alt="jtime" class="img-fluid rounded shadow-lg">
+<body>
+    <div class="container mt-5">
+        <div class="row mb-5">
+            <div class="col-md-4">
+                <img src="beer.jpg" alt="jtime" class="img-fluid rounded shadow-lg">
+            </div>
+            <div class="col-md-8">
+                <h1>Jtime</h1>
+                <p><em>Manager of <a href="https://www.yahoo.com"><strong>the hot pot restaurant.</strong></a></em></p>
+                <p>I am a cooker. I like to cook something.</p>
+            </div>
         </div>
-        <div class="col-md-8">
-            <h1>Jtime</h1>
-            <p><em>Manager of <a href="https://www.yahoo.com"><strong>the hot pot restaurant.</strong></a></em></p>
-            <p>I am a cooker. I like cook something.</p>
-        </div>
+
+        <hr>
+
+        <h3><a href="Education.html">Education level</a></h3>
+        <h3><a href="contact_moe.html">Contact me</a></h3>
+        <h3><a href="othertest.html">Other test</a></h3>
+
+        <h3>Work Experience</h3>
+        <p>2014-2022 大呼過癮臭臭鍋汐止店店長</p>
+        <p>2013 大呼過癮臭臭鍋樟樹店儲備人員</p>
+
+        <table class="table-custom mb-4">
+            <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Work</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2014-2022</td>
+                    <td>大呼過癮臭臭鍋汐止店店長</td>
+                </tr>
+                <tr>
+                    <td>2013</td>
+                    <td>大呼過癮臭臭鍋樟樹店儲備人員</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h3>My Hobbies</h3>
+        <ol>
+            <li>上網</li>
+            <li><a href="https://www.youtube.com">看影片</a></li>
+        </ol>
+
+        <hr>
+
+        <h3>Skills</h3>
+        <table class="table rounded mb-4">
+            <tbody>
+                <tr>
+                    <td>電腦組裝</td>
+                    <td>⭐⭐</td>
+                    <td>網路建置</td>
+                    <td>⭐⭐⭐</td>
+                </tr>
+            </tbody>
+        </table>
     </div>
 
-    <hr>
-
-    <h3><a href="Education.html">Education level</a></h3>
-    <h3><a href="contact_moe.html">Contact me</a></h3>
-    <h3><a href="othertest.html">Other test</a></h3>
-
-    <h3>Work Experience</h3>
-    <p>2014-2022 大呼過癮臭臭鍋汐止店店長</p>
-    <p>2013 大呼過癮臭臭鍋樟樹店儲備人員</p>
-
-    <br>
-
-    <!-- Bootstrap Table -->
-    <table class="table-custom">
-        <thead>
-            <tr>
-                <th>Date</th>
-                <th>Work</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>2014-2022</td>
-                <td>大呼過癮臭臭鍋汐止店店長</td>
-            </tr>
-            <tr>
-                <td>2013</td>
-                <td>大呼過癮臭臭鍋樟樹店儲備人員</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <h3>My Hobbies</h3>
-    <!-- Bootstrap Ordered List -->
-    <ol>
-        <li>上網</li>
-        <li><a href="https://www.youtube.com">看影片</a></li>
-    </ol>
-
-    <hr>
-
-    <h3>Skills</h3>
-    <table class="table rounded">
-        <tbody>
-            <tr>
-                <td>電腦組裝</td>
-                <td>⭐⭐</td>
-                <td>網路建置</td>
-                <td>⭐</td>
-            </tr>
-            <tr>
-                <td>料理</td>
-                <td>⭐⭐</td>
-                <td>行銷規劃</td>
-                <td>⭐⭐</td>
-            </tr>
-        </tbody>
-    </table>
-
-    <!-- Add Bootstrap JS and dependencies -->
+    <!-- Bootstrap JS and Popper.js -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
 </body>
 
 </html>
