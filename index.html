@@ -6,12 +6,46 @@
     <title>Jtime's Personal Site</title>
     <!-- Add Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background: linear-gradient(to right, #f8e9a1, #f76d57); /* 這將產生一個從黃色到橙紅的漸變背景 */
+            color: #333;
+        }
+        
+        a {
+            color: #007bff;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        /* 圖片效果 */
+        img:hover {
+            transform: scale(1.1); /* 放大效果 */
+            transition: transform 0.2s; /* 平滑放大動畫 */
+        }
+
+        /* 更改Bootstrap的表格顏色 */
+        .table {
+            background-color: rgba(255, 255, 255, 0.8); /* 白色背景且半透明 */
+        }
+
+        th, td {
+            border: none !important;
+        }
+
+        th {
+            border-bottom: 1px solid #ddd !important;
+        }
+    </style>
 </head>
 
 <body class="container mt-5">
     <div class="row mb-5">
         <div class="col-md-4">
-            <img src="beer.jpg" alt="jtime" class="img-fluid">
+            <!-- 加了一個陰影效果 -->
+            <img src="beer.jpg" alt="jtime" class="img-fluid rounded shadow-lg">
         </div>
         <div class="col-md-8">
             <h1>Jtime</h1>
@@ -33,7 +67,7 @@
     <br>
 
     <!-- Bootstrap Table -->
-    <table class="table">
+    <table class="table rounded">
         <thead>
             <tr>
                 <th>Date</th>
@@ -62,7 +96,7 @@
     <hr>
 
     <h3>Skills</h3>
-    <table class="table">
+    <table class="table rounded">
         <tbody>
             <tr>
                 <td>電腦組裝</td>
