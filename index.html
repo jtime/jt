@@ -37,7 +37,33 @@
 
         th {
             border-bottom: 1px solid #ddd !important;
-        }
+		/* 加入的自定義樣式 */
+		.table-custom {
+			background-color: rgba(255, 255, 255, 0.8);
+			border: 1px solid rgba(255, 178, 127, 0.7);
+			border-radius: 15px;  /* 圓角 */
+			overflow: hidden;  /* 確保子元素不超出圓角 */
+		}
+
+		.table-custom thead {
+			background-color: rgba(255, 143, 94, 0.8);
+		}
+
+		.table-custom thead th {
+			border: none;
+			color: white;
+		}
+
+		.table-custom tbody tr:last-child td {
+			border-bottom: none;
+		}
+
+		.table-custom tbody td {
+			border-top: none;
+			border-bottom: 1px solid rgba(255, 178, 127, 0.5);
+		}
+
+				}
     </style>
 </head>
 
@@ -67,7 +93,7 @@
     <br>
 
     <!-- Bootstrap Table -->
-    <table class="table rounded">
+    <table class="table-custom">
         <thead>
             <tr>
                 <th>Date</th>
